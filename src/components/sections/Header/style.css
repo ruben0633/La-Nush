@@ -1,0 +1,66 @@
+.Header {
+    border: 1px solid;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+div.container
+{
+    font-family: Raleway;
+    text-align: center;
+}
+
+div.container a
+{
+
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 0;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.active {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+a {
+    color: black;
+}
+.active-link {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
