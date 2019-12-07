@@ -1,5 +1,5 @@
 .Header {
-    border: 1px solid;
+    border-bottom: 1px solid;
     padding-top: 15px;
     padding-bottom: 10px;
     position: fixed;
@@ -36,31 +36,30 @@ div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
     transition: all 0.3s;
 }
 
-div.topBotomBordersIn a:before
-{
-    top: 0px;
+div.topBotomBordersIn a:before {
+    top: 0;
     transform: translateY(-10px);
 }
 
-div.topBotomBordersIn a:after
-{
+div.topBotomBordersIn a:after {
     bottom: 0px;
     transform: translateY(10px);
 }
 
-div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+div.topBotomBordersIn active:hover:before, div.topBotomBordersIn active:hover:after
 {
     opacity: 1;
     transform: translateY(0px);
 }
+
 .active {
     border-top: 2px solid;
     border-bottom: 2px solid;
 }
 a {
     color: black;
-}
-.active-link {
-    border-top: 2px solid;
-    border-bottom: 2px solid;
 }

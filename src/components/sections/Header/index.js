@@ -20,7 +20,7 @@ const Header = () => {
             <div className="container purple topBotomBordersIn ">
                 <ul className='flexible'>
                     <li>
-                        <NavLink to='/'  >
+                        <NavLink exact to='/'  >
                             HOME
                         </NavLink>
                     </li>

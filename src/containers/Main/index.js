@@ -4,7 +4,7 @@ import '../../style.css';
 
 const Main = () => {
     return(
-        <div>
+        <div className='Main pageSize'>
             Main
         </div>
     )
