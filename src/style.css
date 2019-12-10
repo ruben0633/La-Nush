@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 .flexible {
     display: flex;
@@ -68,4 +69,5 @@
 
 .pageSize {
     min-height: calc(100vh - 300px);
+    padding-top: 119px;
 }

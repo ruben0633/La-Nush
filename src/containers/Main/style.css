@@ -1,0 +1,55 @@
+.main-first {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 55vh;
+}
+.italic-text {
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 65px;
+}
+
+.button {
+    color: white;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    padding: 6px 20px;
+    border-radius: 5px;
+    border: 2px solid #a6815b;
+    background-color: #a6815b;
+    cursor: pointer;
+    transition: .5s liner;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    transition:  .3s linear;
+}
+.main-second {
+    margin-top: 50px;
+}
+.second-title {
+    font-size: 34px;
+    color: #a6815b;
+    margin: 30px 0;
+    font-weight: 700;
+
+}
+.second-text {
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.main-second {
+    margin-bottom: 70px;
+    padding-bottom: 60px;
+}
+.carousel {
+    width: 80%;
+ }
