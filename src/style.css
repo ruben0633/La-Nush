@@ -1,10 +1,20 @@
+@font-face {
+    font-family: "Open Sant";
+    /*src: url('/src/assets/Fonts/OpenSans/OpenSans-Bold.ttf');*/
+    src: url('assets/Fonts/OpenSans/OpenSans-Regular.ttf');
+}
+/*//C:\Users\Ruben\Desktop\La-Nush\src\assets\Fonts\OpenSans\OpenSans-Bold.ttf
+//src/assets/Fonts/OpenSans/OpenSans-Bold.ttf*/
+
 *{
     list-style: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:  "Open Sant";
+    /*font-family: 'Times New Roman',Georgia,"Times New Roman",serif;*/
+    /*font-weight: lighter!important;*/
 }
 .flexible {
     display: flex;
@@ -66,8 +76,24 @@
 .App {
     min-height: 100vh;
 }
-
 .pageSize {
     min-height: calc(100vh - 300px);
     padding-top: 119px;
+}
+.secondary-button {
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7px 18px;
+    border-radius: 5px;
+    border: 2px solid #a6815b;
+    background-color: #a6815b;
+    cursor: pointer;
+}
+.title {
+    font-size: 34px;
+    color: #a6815b;
+    margin: 30px 0;
+    font-weight: 700;
 }

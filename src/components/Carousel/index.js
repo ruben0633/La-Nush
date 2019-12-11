@@ -58,9 +58,13 @@ const images = [
     },
 ];
 const items = images.map((item) => (
-   <div key={item.id}>
-       <Image className='carousel-item'src={item.image} />
-       <span className='item-text'>{item.text}</span>
+   <div key={item.id}  className='flexible vertical aCenter jCenter' >
+      <div className='flexible vertical  aCenter'>
+          <Image className='carousel-item' src={item.image} />
+      </div>
+      <div className='item-text flexible jCenter'>
+          <span >{item.text}</span>
+      </div>
    </div>
 
 ));

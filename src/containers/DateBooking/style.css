@@ -1,0 +1,87 @@
+.service-color {
+    width: 250px;
+    height: 15px;
+    background: #bec3c7;
+}
+.dataParent {
+    width: 80%;
+    padding :50px 0;
+}
+
+.service-text {
+    line-height: 1.7em;
+    font-weight: 700;
+    color: #a6815b;
+}
+.active-color {
+    background-color: #a6815b !important;
+}
+.service-colors:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.service-colors{
+    width: 250px;
+    height: 15px;
+    background: #bec3c7;
+}
+.data-services > div:nth-child(1) > div {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.data-services > div:nth-child(4) > div {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.booking-service-title {
+    font-weight: 700;
+    color: #666;
+   line-height: 40px;
+}
+.select-service {
+    width: 31%;
+    margin-left: 5px;
+}
+.select-service > section {
+    padding: 5px 6px;
+}
+.section {
+    padding: 5px 6px;
+    font-size: 17px;
+    border-radius: 3px;
+    border: 1px solid  #bec3c7;
+    outline: none;
+    font-weight: 400;
+}
+.booking-last {
+   border-top: 1px solid #666;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.icon-parent {
+    width: 35px;
+    margin-top: 21px;
+    margin-left: 21px;
+    height: 35px;
+    border-radius: 50%;
+    background: #a6815b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+/* div.booking-select-service > div > div:nth-child(2) > button{*/
+/*    outline: none;*/
+/*    color: white;*/
+/*    font-size: 20px;*/
+/*    font-weight: 500;*/
+/*    line-height: 34px;*/
+/*    padding: 6px 20px;*/
+/*    border-radius: 5px;*/
+/*    border: 2px solid #a6815b;*/
+/*    background-color: #a6815b;*/
+/*    cursor: pointer;*/
+/*}*/

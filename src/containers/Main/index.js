@@ -60,11 +60,14 @@ const Main = () => {
                             infinite: true,
                             speed: 800,
                             slidesToShow: 1,
-                            slidesToScroll: 1
+
+                            arrows: true
                         }}
                    />
-
                 </div>
+                <button className='button'>
+                    Termin buchen
+                </button>
             </div>
         </div>
     )
