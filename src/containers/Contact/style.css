@@ -1,0 +1,19 @@
+.map-parent {
+    width: 580px;
+    height: 300px;
+}
+.contact-title {
+    font-size: 56px;
+}
+.contact-info {
+    padding: 20px 0;
+    text-align: center;
+}
+.contact-info > span {
+    line-height: 30px;
+}
+.info-middle {
+    font-size: 20px;
+    line-height: 2.1em;
+    padding-bottom: 10px;
+}

@@ -103,7 +103,8 @@ const Confidentiality = () => {
                     <span>
                       Unsere Seiten nutzen Funktionen von Google +1. Anbieter ist die Google Inc. 1600
                         Amphitheatre Parkway Mountain View, CA 94043, USA.
-Erfassung und Weitergabe von Informationen: Mithilfe der Google +1-Schaltfläche können Sie Informationen
+                        Erfassung und Weitergabe von Informationen: Mithilfe der Google +1-Schaltfläche
+                        können Sie Informationen
                         weltweit veröffentlichen. Über die Google +1-Schaltfläche erhalten Sie und andere Nutzer
                         personalisierte Inhalte von Google und unseren Partnern. Google speichert sowohl die Information,
                         dass Sie für einen Inhalt +1 gegeben haben, als auch Informationen über die Seite, die Sie

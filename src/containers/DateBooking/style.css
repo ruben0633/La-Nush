@@ -3,10 +3,10 @@
     height: 15px;
     background: #bec3c7;
 }
-.dataParent {
-    width: 80%;
-    padding :50px 0;
-}
+/*.dataParent {*/
+/*    width: 80%;*/
+/*    padding :50px 0;*/
+/*}*/
 
 .service-text {
     line-height: 1.7em;
@@ -73,15 +73,3 @@
     cursor: pointer;
 }
 
-/* div.booking-select-service > div > div:nth-child(2) > button{*/
-/*    outline: none;*/
-/*    color: white;*/
-/*    font-size: 20px;*/
-/*    font-weight: 500;*/
-/*    line-height: 34px;*/
-/*    padding: 6px 20px;*/
-/*    border-radius: 5px;*/
-/*    border: 2px solid #a6815b;*/
-/*    background-color: #a6815b;*/
-/*    cursor: pointer;*/
-/*}*/

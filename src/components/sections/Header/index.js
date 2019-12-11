@@ -14,7 +14,7 @@ const Header = () => {
         <div className=' flexible jBetween Header pageContent aCenter'>
             <Link to='/'>
                 <div>
-                    <Image src="http://lanushmuenchen.de/wp-content/uploads/2018/12/Logo-300x89-1.png"></Image>
+                    <Image src="http://lanushmuenchen.de/wp-content/uploads/2018/12/Logo-300x89-1.png" />
                 </div>
             </Link>
             <div className="container purple topBotomBordersIn ">
