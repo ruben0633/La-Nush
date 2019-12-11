@@ -6,14 +6,12 @@
     background-color: white;
     z-index: 999999;
 }
-
-
 div.container {
     font-family: Raleway;
     text-align: center;
 }
-
-div.container a {
+/* .pageContent.aCenter > div > ul > li:nth-child(2) */
+.pageContent .container .flexible > li > a {
     text-decoration: none;
     font: 20px Raleway;
     margin: 0px 10px;
@@ -22,8 +20,13 @@ div.container a {
     z-index: 0;
     cursor: pointer;
 }
-
-div.topBotomBordersIn a:before, div.topBotomBordersIn a:after {
+/* .pageContent.aCenter > div > ul > li */
+/* #root > div.flexible.jBetween.Header.pageContent.aCenter > div > ul  > a::before */
+/* .pageContent.aCenter > div > ul > li > a {
+    background: red;
+} */
+.pageContent.aCenter > div > ul > li > a:before,
+.pageContent.aCenter > div > ul > li > a:after {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -33,31 +36,139 @@ div.topBotomBordersIn a:before, div.topBotomBordersIn a:after {
     opacity: 0;
     transition: all 0.3s;
 }
-
-div.topBotomBordersIn a:before {
+.pageContent.aCenter > div > ul > li > a:before {
     top: 0;
     transform: translateY(-10px);
 }
-
-div.topBotomBordersIn a:after {
+.pageContent.aCenter > div > ul > li > a:after {
     bottom: 0px;
     transform: translateY(10px);
 }
-
-div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
+.pageContent.aCenter > div > ul > li > a:hover:before, .pageContent.aCenter > div > ul > li > a:hover:after {
     opacity: 1;
     transform: translateY(0px);
 }
-div.topBotomBordersIn active:hover:before, div.topBotomBordersIn active:hover:after
+div.topBotomBordersIn .active:hover:before, div.topBotomBordersIn .active:hover:after
 {
     opacity: 1;
     transform: translateY(0px);
 }
-
-.active {
+/* .active {
     border-top: 2px solid;
     border-bottom: 2px solid;
-}
+} */
 a {
     color: black;
+}
+.pageContent .container  ul li:nth-child(2) .FaChevronDown {
+    vertical-align: center;
+    font-size: 15px;
+    transform: rotate(180deg);
+}
+.pageContent .container  ul li:nth-child(2):hover .FaChevronDown{
+    transition: .3s linear;
+    transform: rotate(360deg);
+}
+.pageContent {
+    box-shadow: 1px 1px 3px #777;
+}
+.pageContent > div > ul > li:nth-child(2) > ul {
+    position: absolute;
+}
+.pageContent.aCenter > div > ul > li > .dropdownMenu {
+    text-align: left;
+    margin: 0 10px;
+    top: 119px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    background-color: rgba(255, 255, 255, 0.308);
+}
+.pageContent.aCenter > div > ul > li > .dropdownMenu > li {
+    padding: 10px 0;
+}
+.Header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999999;
+}
+div.container {
+    font-family: Raleway;
+    text-align: center;
+}
+/* .pageContent.aCenter > div > ul > li:nth-child(2) */
+.pageContent .container .flexible > li > a {
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 0;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+/* .pageContent.aCenter > div > ul > li */
+/* #root > div.flexible.jBetween.Header.pageContent.aCenter > div > ul  > a::before */
+/* .pageContent.aCenter > div > ul > li > a {
+    background: red;
+} */
+.pageContent.aCenter > div > ul > li > a:before,
+.pageContent.aCenter > div > ul > li > a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+.pageContent.aCenter > div > ul > li > a:before {
+    top: 0;
+    transform: translateY(-10px);
+}
+.pageContent.aCenter > div > ul > li > a:after {
+    bottom: 0px;
+    transform: translateY(10px);
+}
+.pageContent.aCenter > div > ul > li > a:hover:before, .pageContent.aCenter > div > ul > li > a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+div.topBotomBordersIn .active:hover:before, div.topBotomBordersIn .active:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+/* .active {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+} */
+a {
+    color: black;
+}
+.pageContent .container  ul li:nth-child(2) .FaChevronDown {
+    vertical-align: center;
+    font-size: 15px;
+    transform: rotate(180deg);
+}
+.pageContent .container  ul li:nth-child(2):hover .FaChevronDown{
+    transition: .3s linear;
+    transform: rotate(360deg);
+}
+.pageContent {
+    box-shadow: 1px 1px 3px #777;
+}
+.pageContent > div > ul > li:nth-child(2) > ul {
+    position: absolute;
+}
+.pageContent.aCenter > div > ul > li > .dropdownMenu {
+    text-align: left;
+    margin: 0 10px;
+    top: 119px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    background-color: rgba(255, 255, 255, 0.308);
+}
+.pageContent.aCenter > div > ul > li > .dropdownMenu > li {
+    padding: 10px 0;
 }

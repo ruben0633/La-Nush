@@ -36,8 +36,17 @@ const Contact = () => {
                     <span>Mit der U-Bahn: U4/U5 bis Heimeranplatz oder Westendstraße</span>
                     <span>Mit der Tram: Tram 18 oder 19 bis Barthstraße</span>
                 </div>
-                <div className='flexible jCenter'>
+                <div className='flexible jCenter vertical aCenter'>
                     <span className='title'>Haben Sie eine Frage? Schreiben Sie uns!</span>
+                    <div className='user-contact-block flexible vertical aCenter'>
+                        <input type="text" placeholder='Name' className='user-contact-info'/>
+                        <input type="email" placeholder='E-Mail' className='user-contact-info'/>
+                        <input type="text" placeholder='Telephone' className='user-contact-info'/>
+                        <input type="text" placeholder='Nachricht' className='user-contact-info'/>
+                        <div className='flexible jEnd button-parent' >
+                            <button className='button'>Sended</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

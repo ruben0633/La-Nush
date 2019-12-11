@@ -17,3 +17,19 @@
     line-height: 2.1em;
     padding-bottom: 10px;
 }
+.user-contact-block{
+    width: 80%;
+    padding-top: 70px;
+}
+.user-contact-info {
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #666;
+    outline: none;
+    font-size: 22px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.button-parent {
+    width: 61%;
+}
