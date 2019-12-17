@@ -4,7 +4,7 @@ import '../../style.css';
 
 const Confidentiality = () => {
     return(
-        <div className='pageSize page-padding flexible jCenter'>
+        <div className='flexible jCenter'>
             <div className='dataParent'>
                 <div className='conf-title-parent flexible vertical aCenter jCenter'>
                     <span className='title'>Datenschutz</span>

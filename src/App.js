@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Route, Switch} from 'react-router-dom';
+import {NavLink, Route, Switch} from 'react-router-dom';
 
 import {
 	Main,
@@ -14,7 +14,7 @@ import {
 	LashesExtension,
 	Confidentiality,
 	ElectricEpilation,
-	PermanentHairRemoval
+	DauerhafteHaarentfernung
 } from './containers';
 
 import {Header, Footer} from './components';
@@ -36,7 +36,7 @@ const App = () => {
 					<Route exact path="/confidentiality" component={Confidentiality} />
 					<Route exact path="/lashesextension" component={LashesExtension} />
 					<Route exact path="/electricepilation" component={ElectricEpilation} />
-					<Route exact path="/permanenthairremoval" component={PermanentHairRemoval} />
+					<Route exact path="/dauerhafteHaarentfernung" component={DauerhafteHaarentfernung} />
 				</Switch>
 			<Footer/>
 		</>

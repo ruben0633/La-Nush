@@ -9,7 +9,7 @@ import Wimpernwelle from "./Wimpernwelle";
 import LashesExtension from "./LashesExtension";
 import Confidentiality from "./ Confidentiality";
 import ElectricEpilation from "./ElectricEpilation";
-import PermanentHairRemoval from './PermanentHairRemoval';
+import DauerhafteHaarentfernung from './DauerhafteHaarentfernung';
 
 
 
@@ -25,5 +25,5 @@ export {
     LashesExtension,
     Confidentiality,
     ElectricEpilation,
-    PermanentHairRemoval
+    DauerhafteHaarentfernung
 }

@@ -1,0 +1,18 @@
+
+.inforCardContent {
+    width: 47.5%;
+}
+.InfoCard {
+    width: 100%;
+    text-align: justify;
+}
+
+.info_content {
+    padding: 20px;
+
+}
+
+.InfoCard .info_content li {
+    font-size: 14px;
+    line-height: 26px;
+}

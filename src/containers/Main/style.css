@@ -40,7 +40,6 @@
     margin: 30px 0;
     font-weight: 700;
     font-family: 'Times New Roman','Georgia',"Times New Roman",serif;
-
 }
 .second-text {
     text-align: center;
@@ -54,3 +53,6 @@
 .carousel {
     width: 80%;
  }
+#leistungen {
+    scroll-behavior: smooth;
+}

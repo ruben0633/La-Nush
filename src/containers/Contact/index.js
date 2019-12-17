@@ -11,7 +11,7 @@ import '../../style.css';
 
 const Contact = () => {
     return(
-        <div className='pageSize page-padding flexible jCenter'>
+        <div className='flexible jCenter'>
             <div className='dataParent flexible jBetween vertical'>
                 <div className='flexible jBetween'>
                     <div className='map-parent'>

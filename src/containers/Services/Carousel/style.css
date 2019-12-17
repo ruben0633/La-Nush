@@ -1,8 +1,5 @@
 .carousel-item {
     height: 320px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,11 +7,18 @@
     object-fit: contain;
 }
 .item-text {
-    width: 45%;
+    width: 100%;
     position: relative;
     top: -160px;
     background: rgba(255,255,255, 0.5);
 }
 .item-text > span {
     line-height: 30px;
+}
+
+.AppWrapper {
+    width: 50%;
+}
+.itemParent {
+    position: relative;
 }

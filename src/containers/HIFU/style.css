@@ -1,0 +1,38 @@
+
+/*.HIFUTitle .flexible {*/
+/*    height: 90vh;*/
+/*}*/
+
+.HIFUTitle .title_content {
+    padding-right: 50px;
+}
+.HIFUTitle .title_container {
+text-align: justify;
+}
+.HIFUTitle .title_container .title_content h2:last-of-type{
+    color: #a6815b!important;
+    line-height: 2.9em;
+    font-size: 26px;
+}
+
+
+.HIFUTitle .title_container .title_content p:first-of-type {
+    padding-bottom: 1em;
+}
+.size {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.row {
+    padding: 20px 0;
+}
+.second-size {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.second-size > div {
+    padding-top: 20px;
+}

@@ -1,0 +1,29 @@
+.wimpernLifting .title_content{
+margin: 60px 94px 95px 107px;
+
+}
+
+.wimpernLifting .title_content p {
+    line-height: 1.5em;
+    padding-bottom: 1em;
+}
+
+.imageContent {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.wimpernTextBlock {
+    width: 50%;
+    margin: 0 auto;
+}
+.wimpernText {
+    padding-top: 50px;
+}
+
+.wimpernlifting {
+    width: 40%;
+    margin: 0 auto;
+    padding: 50px 0;
+
+}

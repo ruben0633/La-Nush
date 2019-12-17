@@ -1,0 +1,31 @@
+.mcroblanding_title .flexible {
+    height: 100vh;
+}
+.microblanding_title {
+    margin: 50px 27px 65px 58px;
+}
+
+.title_content  p:first-of-type {
+    margin-bottom: 14.5px;
+}
+
+.MicroBlading .size {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    padding: 27px 0;
+}
+
+
+.microSize {
+    width: 70%;
+    margin: 0 auto;
+}
+.MicroBlading .textTitle {
+    padding: 20px 0;
+}
+.MicroBlading .textTitle p{
+    padding: 0;
+}

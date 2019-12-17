@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Slider from 'react-slick';
 
@@ -6,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import './style.css';
-import '../../style.css';
 
 import {
     slide1,
@@ -16,9 +14,9 @@ import {
     slide5,
     slide6,
     slide7,
-} from '../../assets/HomePage';
+} from '../../../assets/HomePage';
 
-import Image from '../../components/Image'
+import Image from '../../../components/Image';
 
 const images = [
     {
@@ -58,10 +56,8 @@ const images = [
     },
 ];
 const items = images.map((item) => (
-   <div key={item.id}  className='flexible vertical aCenter jCenter' >
-      <div className='flexible vertical  aCenter'>
+   <div key={item.id}  className='flexible vertical aCenter jCenter itemParent' >
           <Image className='carousel-item' src={item.image} />
-      </div>
       <div className='item-text flexible jCenter'>
           <span >{item.text}</span>
       </div>
@@ -71,35 +67,45 @@ const items = images.map((item) => (
 
 
 
-const SimpleSlider = ({ settings }) => (
+
+
+const Carousel = () => (
     <div className='AppWrapper'>
         <Slider
-            {...settings}
+            settings={{
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            }}
         >
-            <div className='flexible'>
-                {items[0]}
+            <div>
+               {items[0]}
             </div>
             <div>
-                {items[1]}
+                 {items[1]}
             </div>
             <div>
-                {items[2]}
+                 {items[2]}
             </div>
             <div>
-                {items[3]}
+                 {items[3]}
             </div>
             <div>
-                {items[4]}
+                 {items[4]}
             </div>
             <div>
-                {items[5]}
+                 {items[5]}
             </div>
             <div>
-                {items[6]}
+                 {items[6]}
             </div>
         </Slider>
     </div>
 );
-export default SimpleSlider;
+
+export default Carousel;
 
 

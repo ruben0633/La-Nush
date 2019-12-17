@@ -3,20 +3,18 @@ import React from 'react';
 import './style.css';
 import '../../style.css';
 
-
 import {rrs} from '../../assets/HomePage';
-import SimpleSlider from '../../components/Carousel';
-
-
+import { Services }  from '../../containers';
 
 const Main = () => {
     return(
-        <div className='Main pageSize' >
+        <div className='Main' >
             <div className='main-first flexible aCenter jCenter vertical' style={{backgroundImage:`url(${rrs})`}} >
                 <span className='italic-text'>Herzlich Willkommen im</span>
                 <span className='italic-text' >La‘Nush</span>
                 <span className='italic-text'>Laser & Beauty Center</span>
             </div>
+
             <div className='main-second'>
                <div className='flexible jCenter'>
                    <button className='button'>
@@ -50,24 +48,18 @@ const Main = () => {
                     Schönheitsprogramm in unserem Beauty & Laser Center perfekt ab.
                 </span>
             </div>
-            <div className='main-carousel-block flexible vertical aCenter'>
+            <div >
+                <div className='flexible jCenter' id='leistungen'>
+                    <span className='title'>LEISUNGEN</span>
+                </div>
+                <div className='flexible aCenter jCenter'>
+                    <Services />
+                </div>
                 <div className='flexible jCenter'>
-                    <span className='second-title'>LEISTUNGEN</span>
+                    <button className='button'>
+                        Termin buchen
+                    </button>
                 </div>
-                <div className='carousel'>
-                    <SimpleSlider
-                        settings={{
-                            infinite: true,
-                            speed: 800,
-                            slidesToShow: 1,
-
-                            arrows: true
-                        }}
-                   />
-                </div>
-                <button className='button'>
-                    Termin buchen
-                </button>
             </div>
         </div>
     )

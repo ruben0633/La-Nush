@@ -1,0 +1,31 @@
+.PermanentHairRemoval_title .flexible{
+    height: 100vh;
+}
+.PermanentHairRemoval_title .title_content{
+    padding-right: 50px ;
+}
+
+.Permanent h2:last-of-type {
+    color: #a6815b!important;
+    line-height: 2.9em;
+    font-size: 26px;
+}
+.Permanent p {
+    text-align: justify;
+}
+
+
+.PermanentHairRemoval .size {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.ablauf li:first-of-type{
+    padding-bottom: 20px;
+}
+.preisliste-title{
+color: #a6815b;
+    padding-top: 50px;
+
+}

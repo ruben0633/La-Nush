@@ -1,12 +1,11 @@
 import React from 'react';
+
+import Carousel from './Carousel';
+
 import './style.css';
 import '../../style.css';
 
-const Services = () => {
-    return(
-        <div>
-            Services
-        </div>
-    )
-}
-export default Services
+const Services = () => (
+    <Carousel />
+);
+export default Services;

@@ -1,0 +1,21 @@
+.NailDesign {
+    width: 80%;
+    margin: 0 auto;
+}
+.row {
+    padding-top: 100px;
+}
+.titleContent {
+    padding: 100px 0;
+}
+.shelackPrices {
+    width: 70%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+.infoPadding > ul {
+    padding-left: 0!important;
+}
+.infoCardParent {
+    border-bottom: 1px dashed #AF7E48;
+}

@@ -1,0 +1,29 @@
+.eyeLash_container {
+    padding: 27px 0;
+}
+
+.Lashes_title .flexible{
+height: 100vh;
+}
+
+
+.LashesExtension .size {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.miniSize {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.eyeLash_container .sideLeft p:not(:first-of-type),
+.eyeLash_container .sideRight p:not(:first-of-type) {
+    padding: 5px 0;
+}
+
+.eyeLash_container .sideLeft,
+.eyeLash_container .sideRight {
+    width: 47.5%;
+}
