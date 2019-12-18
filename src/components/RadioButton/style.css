@@ -1,0 +1,33 @@
+.radio {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #777777;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.radio:hover {
+    border: 2px solid #a6815b;
+}
+.radioContent {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.radio:hover .radioContent {
+    background-color: #a6815b;
+}
+.radioContentDisabled {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.radioContentDisabled:hover {
+    background: none !important;
+}
+.radioDisabled:hover .radioContentDisabled {
+    background: none !important;
+}
+.radioDisabled {
+    border: 2px solid #777777 !important;
+}

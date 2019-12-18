@@ -1,0 +1,22 @@
+.date {
+    padding: 7px 17px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    border: 1px solid #cccccc;
+    position: relative;
+    margin-right: 8px;
+}
+.date:hover {
+    border: 2px solid #a6815b;
+}
+.dateOpacity {
+    opacity: 0.5;
+    border: 1px solid #cccccc !important;
+}
+.timeLine {
+    border-top: 1px solid;
+    position: relative;
+    width: 112%;
+    top: -12px;
+}
+

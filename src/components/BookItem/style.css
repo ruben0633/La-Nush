@@ -1,0 +1,36 @@
+.itemFont {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #777777;
+}
+.activeItemFont {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    color: ghostwhite;
+}
+.itemIcon {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 2px solid #777777;
+    margin-right: 10px;
+}
+.activeItemIcon {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 2px solid ghostwhite;
+    margin-right: 10px;
+}
+.actBook {
+    background-color:#CA9963 !important;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.activeBookPrice {
+    color: ghostwhite;
+}
