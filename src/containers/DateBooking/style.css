@@ -1,11 +1,3 @@
-.service-color {
-    width: 250px;
-    height: 15px;
-    background: #bec3c7;
-}
-.active-block {
-    background-color:  #a6815b!important;
-}
 .active-color {
     color: #a6815b;
     font-weight: 600;
@@ -30,7 +22,7 @@
     border-bottom-left-radius: 5px;
 }
 
-.data-services > div:nth-child(4) > div {
+.data-services > div:nth-child(3) > div {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -86,19 +78,6 @@
     margin-top: 40px;
 }
 
-.bookButton {
-    color: white;
-    border-radius: 5px;
-    font-size: 18px;
-    padding: 8px 13px;
-    border: none;
-    background-color: #a6815b;
-    font-weight: 800;
-    margin-top: 28px;
-    cursor: pointer;
-    outline: none;
-}
-
 .dateBlock{
     padding: 7px 15px;
     border-radius: 5px;
@@ -111,5 +90,71 @@
     line-height: 25px;
 }
 
-
-
+.mRight {
+    margin-right: 25px;
+}
+.mLeft {
+    margin-left: 25px;
+}
+.inputParent{
+    margin-top: 20px;
+}
+.inputText {
+    color: #a6815b;
+    font-weight: 600;
+    line-height: 40px;
+}
+.logContacts {
+    width: 100%;
+}
+.geo {
+    width: 100%;;
+}
+.inputStyle {
+    padding: 6px 7px 6px 5px;
+    border-radius: 5px;
+    border-style: groove;
+    outline: none;
+}
+.selectStyle {
+    padding: 6px 7px 6px 5px;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+.selectStyle > option {
+    font-size: 14px;
+    line-height: 25px;
+}
+.bookTextArea {
+    max-width: 100%;
+    height: 57px;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+.buttonsParent {
+    padding: 20px 0;
+    border-top: 1px solid silver;
+    margin-top: 30px;
+}
+.bookActiveBlock {
+    width: 25%;
+}
+.bookActive {
+    width: 100%;
+}
+.bookStep {
+    background: #bec3c7;
+    height: 15px;
+    width: 100%;
+}
+.active-block {
+    margin-right: 20px;
+}
+.active-block:last-child {
+    margin-right: 0 !important;
+}
+.activeStep{
+    background-color: #AF7E48 !important;
+}

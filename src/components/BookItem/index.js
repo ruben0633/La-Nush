@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classnames from 'classnames'
+import classnames from 'classnames';
 
 import './style.css';
 import '../../style.css';
@@ -7,7 +7,7 @@ import '../../style.css';
 import { IoMdCheckmark } from 'react-icons/io'
 
 const BookItem = ({service, persone, price}) => {
-    const [ state, setState ] = useState(false)
+    const [ state, setState ] = useState(false);
     const renderState = () => {
         return setState(!state)
     }

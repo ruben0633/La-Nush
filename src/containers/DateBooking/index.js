@@ -1,166 +1,50 @@
 import React, { useState } from 'react';
+import classnmaes from 'classnames';
 
 import './style.css';
-import '../../style.css'
+import '../../style.css';
 
-import { RadioButton, BookItem, BookTimeBlock } from '../../components';
+
+ import BookSecond from "./BookSecond";
+import BookFirst from "./BookFirst";
+import BookLast from "./BookLast";
 
 const DateBooking = () => {
-    const renderState = ()=> {
-        return(
-            <div className='booking-select-service'>
-                <div style={{paddingTop: '30px'}}>
-                    <span className='booking-service-title'>Please select service:</span>
-                </div>
-                <div className='category'>
-                    <div>
-                        <p className='active-color'>Kategorie</p>
-                        <BookItem service='Kategorie Wahlen' price='23€' ></BookItem>
-                        <BookItem service='Beratung' price='23€'></BookItem>
-                        <BookItem service='MIcroblanding Eyebrows/Shadow' price='23€'></BookItem>
-                        <BookItem service='Wimpernvelangerung' price='23€'></BookItem>
-                        <BookItem service='Nadelepilation / Elektroepilation' price='23€'></BookItem>
-                    </div>
-                </div>
-                <div className='category'>
-                    <div>
-                        <p className='active-color'>Bedienung</p>
-                        <BookItem service='Kategorie Wahlen' price='23€' ></BookItem>
-                        <BookItem service='Beratung' price='23€'></BookItem>
-                        <BookItem service='MIcroblanding Eyebrows/Shadow' proce='23€'></BookItem>
-                        <BookItem service='Wimpernvelangerung' price='23€'></BookItem>
-                        <BookItem service='Nadelepilation / Elektroepilation' price='23€'></BookItem>
-                    </div>
-                </div>
-                <div className='category'>
-                    <div>
-                        <p className='active-color'>Mitarbeiter</p>
-                        <BookItem persone='Irgendein'></BookItem>
-                        <BookItem persone='Lusine Chakhalyan' ></BookItem>
-                        <BookItem persone='Anush Chakhalyan'></BookItem>
-                    </div>
-                </div>
-                <button className='bookButton'>
-                    ADD SERVICES
-                </button>
+    const [state, setState] = useState(1);
+    const onChange = () => {
+        return setState(state +1)
+    };
+    const incState = () => {
+        if(state === 1) {
+            return <BookFirst onChange={onChange}/>
+        }else if(state === 2) {
+            return <BookSecond onChange={onChange}/>
+        } else {
+           return <BookLast />
+        }
+    };
 
-
-                <div className='book-second-step'>
-                    <div className='row flexible jBetween'>
-
-                        <div className='column flexible vertical'>
-                            <div className='dateBlock active-block'>
-                                <span className='dateText' >Web, Dec 18</span>
-                            </div>
-                            <BookTimeBlock time='13:35' disabled/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                        </div>
-                        <div className='column flexible vertical'>
-                            <div className='dateBlock active-block'>
-                                <span className='dateText' >Web, Dec 18</span>
-                            </div>
-                            <BookTimeBlock time='13:35' disabled/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                        </div>
-                        <div className='column flexible vertical'>
-                            <div className='dateBlock active-block'>
-                                <span className='dateText' >Web, Dec 18</span>
-                            </div>
-                            <BookTimeBlock time='13:35' disabled/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                        </div>
-                        <div className='column flexible vertical'>
-                            <div className='dateBlock active-block'>
-                                <span className='dateText' >Web, Dec 18</span>
-                            </div>
-                            <BookTimeBlock time='13:35' disabled/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                        </div>
-                        <div className='column flexible vertical'>
-                            <div className='dateBlock active-block'>
-                                <span className='dateText' >Web, Dec 18</span>
-                            </div>
-                            <BookTimeBlock time='13:35' disabled/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                        </div>
-                        <div className='column flexible vertical'>
-                            <div className='dateBlock active-block'>
-                                <span className='dateText' >Web, Dec 18</span>
-                            </div>
-                            <BookTimeBlock time='13:35' disabled/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                        </div>
-                        <div className='column flexible vertical'>
-                            <div className='dateBlock active-block'>
-                                <span className='dateText' >Web, Dec 18</span>
-                            </div>
-                            <BookTimeBlock time='13:35' disabled/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                        </div>
-                        <div className='column flexible vertical'>
-                            <div className='dateBlock active-block'>
-                                <span className='dateText' >Web, Dec 18</span>
-                            </div>
-                            <BookTimeBlock time='13:35' disabled/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                            <BookTimeBlock time='13:35'/>
-                        </div>
-                    </div>
-                    <div style={{borderTop: '1px solid #666'}} className='flexible jEnd'>
-                        <button className='bookButton'>Nächster</button>
-                    </div>
-                </div>
-            </div>
-        )
-    }
      return(
         <div className='flexible jCenter'>
             <div className='dataParent'>
                 <div className = 'data-services flexible jBetween'>
-                    <div className='flexible vertical jCenter'>
+                    <div className='flexible vertical jCenter grow active-block '>
                         <span className='middle-text'>1. Bedienung</span>
-                        <div className='service-color active-block'></div>
+                        <div className={classnmaes('bookStep',{activeStep: state === 1})} />
                     </div>
-                    <div className='flexible vertical jCenter'>
-                        <span className='middle-text'>2. Zeit</span>
-                        <div className='service-color'></div>
-
+                    <div className='flexible vertical jCenter grow active-block'>
+                        <span className='middle-text'>2. Einzelheiten</span>
+                        <div className={classnmaes('bookStep',{activeStep: state === 2})} />
                     </div>
-                    <div className='flexible vertical jCenter'>
-                        <span className='middle-text'>3. Einzelheiten</span>
-                        <div className='service-color'></div>
-                    </div>
-                    <div className='flexible vertical jCenter'>
-                        <span className='middle-text'>4. Erledigt</span>
-                        <div className='service-color'></div>
+                    <div className='flexible vertical jCenter grow active-block'>
+                        <span className='middle-text'>3. Erledigt</span>
+                        <div className={classnmaes('bookStep',{activeStep: state === 3})} />
                     </div>
                 </div>
-
+                {incState()}
             </div>
         </div>
     )
-}
-export default DateBooking
+};
+
+export default DateBooking;

@@ -5,9 +5,10 @@ import classnames from 'classnames';
 import './style.css';
 import '../../style.css';
 
-const RadioButton = ({disabled}) => {
+const RadioButton = ({disabled, onChange}) => {
+
     return(
-        <div className={classnames('radio flexible jCenter aCenter', {'radioDisabled': disabled})} >
+        <div className={classnames('radio flexible jCenter aCenter', {'radioDisabled': disabled})} onClick={()=>{onChange()}} >
             <div className={classnames('radioContent', {'radioContentDisabled': disabled})}/>
         </div>
     )

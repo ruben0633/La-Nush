@@ -21,4 +21,11 @@
 }
 .itemParent {
     position: relative;
+    outline: none;
+}
+
+.slick-arrow::before{
+    color: red;
+    content: "►";
+    background-color: gray;
 }

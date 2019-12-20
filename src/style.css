@@ -105,3 +105,15 @@ html {
     font-weight: 700;
     color: #a6815b;
 }
+.bookButton {
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 8px 13px;
+    border: none;
+    background-color: #a6815b;
+    font-weight: 800;
+    margin-top: 28px;
+    cursor: pointer;
+    outline: none;
+}
