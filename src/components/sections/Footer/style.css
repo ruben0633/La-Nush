@@ -1,10 +1,42 @@
 .Footer {
     background-image: url(http://lanushmuenchen.de/wp-content/uploads/2018/12/photo-1491061390862-0fe6b0a254bb_00000-min-2.jpg;);
     height: 300px;
+    border-top: 2px solid  #a6815b;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 70px;
     background-attachment: fixed;
+    font-size: 14px;
+    line-height: 25px !important;
+}
 
+.instaIcon {
+    width: 20px;
+    height: 20px;
+    fill: #666;
+    cursor: pointer;
+}
+.faceIcon {
+    width: 20px;
+    height: 17px;
+    fill: #666;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.envelopeIcon {
+    width: 20px;
+    height: 20px;
+    fill: #666;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.footIconParent {
+    padding-top: 20px;
+    margin-left: 40px;
+}
+.footRight {
+    width: 35%;
+}
+.footLeft {
+    width: 35%;
 }

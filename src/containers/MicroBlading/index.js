@@ -4,7 +4,7 @@ import './style.css';
 import '../../style.css';
 import {Title,LineText,InfoCard} from '../../components';
 
-const MicroBladin = () => {
+const MicroBlading = () => {
   return (
     <article className="MicroBlading">
       <div className="mcroblanding_title">
@@ -93,4 +93,4 @@ const MicroBladin = () => {
     </article>
   )
 }
-export default MicroBladin
+export default MicroBlading

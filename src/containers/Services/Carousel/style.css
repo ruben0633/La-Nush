@@ -22,10 +22,42 @@
 .itemParent {
     position: relative;
     outline: none;
+    margin-left: 10px;
 }
 
-.slick-arrow::before{
-    color: red;
-    content: "►";
-    background-color: gray;
+.slick-arrow::before {
+    color: black;
+    background-color: #545454;
+    border-radius: 5px;
+}
+.slick-prev:hover:before, .slick-next:hover:before {
+    background-color: #27B9DA;
+    transition: 0.3s linear;
+}
+button.slick-arrow.slick-prev::before {
+    content: "◄" !important;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    padding: 6px 8px 9px 5px;
+    margin-right: 22px;
+
+}
+button.slick-arrow.slick-next::before{
+    content: '►';
+    font-size: 18px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    padding: 6px 5px 9px 8px;
+    margin-right: 22px;
+
+}
+
+div:nth-child(3) > div.flexible.aCenter.jCenter > div > div > div > div > div.slick-slide.slick-active.slick-current > div{
+    outline: none;
+}
+
+div:nth-child(3) > div.flexible.aCenter.jCenter > div > div > button.slick-arrow.slick-prev{
+    left : -35px;
 }

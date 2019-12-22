@@ -23,20 +23,20 @@ const LineText = ({
     }}
       className="LineText">
       <div className={classnmaes('textInner', className)}>
-        {headTitle && <h3 style={{
-          color: textColor
-        }}>{headTitle}</h3> || <div className={classnmaes('textTitle', flexName)}>
-          <div className="textTitleLeft">
-            {textTitleLeft.map((e, i) => {
-              return (
-                <p key={i} style={{lineHeight:'35px', padding: '20px 0'}}>{e}</p>
-              )
-            })
-}
-          </div>
-          <p>{textTitleRight}</p>
+        {headTitle ? <h3 style={{color: textColor}}>
+              {headTitle}
+            </h3>
+            :
+            <div className={classnmaes('textTitle', flexName)}>
+              <div className="textTitleLeft">
+                {textTitleLeft.map((e, i) => {
+                  return (<p key={i} style={{lineHeight:'35px', padding: '20px 0'}}>{e}</p>)
+                })
+                }
+              </div>
+              <p>{textTitleRight}</p>
+            </div>
 
-        </div>
 }
       </div>
     </div>

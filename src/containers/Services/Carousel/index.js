@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 import "slick-carousel/slick/slick.css";
@@ -17,6 +18,14 @@ import {
 } from '../../../assets/HomePage';
 
 import Image from '../../../components/Image';
+import {
+    DauerhafteHaarentfernung,
+    ElectricEpilation,
+    LashesExtension,
+    MicroBlading,
+    NailDesign,
+    Wimpernwelle
+} from "../../index";
 
 const images = [
     {
@@ -64,44 +73,52 @@ const items = images.map((item) => (
    </div>
 
 ));
-
-
-
-
-
 const Carousel = () => (
     <div className='AppWrapper'>
         <Slider
             settings={{
-                dots: true,
                 infinite: true,
-                speed: 500,
+                speed: 2000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true
             }}
         >
-            <div>
-               {items[0]}
-            </div>
-            <div>
-                 {items[1]}
-            </div>
-            <div>
-                 {items[2]}
-            </div>
-            <div>
-                 {items[3]}
-            </div>
-            <div>
-                 {items[4]}
-            </div>
-            <div>
-                 {items[5]}
-            </div>
-            <div>
-                 {items[6]}
-            </div>
+           <Link to='/LashesExtension'>
+               <div>
+                   {items[0]}
+               </div>
+           </Link>
+           <Link to='/Wimpernwelle'>
+               <div>
+                   {items[1]}
+               </div>
+           </Link>
+            <Link to='/DauerhafteHaarentfernung'>
+                <div>
+                    {items[2]}
+                </div>
+            </Link>
+            <Link to='/ElectricEpilation'>
+                <div>
+                    {items[3]}
+                </div>
+            </Link>
+            <Link to='/DauerhafteHaarentfernung'>
+                <div>
+                    {items[4]}
+                </div>
+            </Link>
+            <Link to='/NailDesign' >
+                <div>
+                    {items[5]}
+                </div>
+            </Link>
+           <Link to='/MicroBlading'>
+               <div>
+                   {items[6]}
+               </div>
+           </Link>
         </Slider>
     </div>
 );

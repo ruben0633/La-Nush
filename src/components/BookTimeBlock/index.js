@@ -7,7 +7,6 @@ import './style.css';
 import '../../style.css';
 
 const BookTimeBlock = ({time, disabled, onChange}) => {
-    console.log(onChange);
     return (
         <div className={classnames('date flexible jCenter', {dateOpacity: disabled})}>
             <RadioButton disabled={disabled} onChange ={onChange}/>

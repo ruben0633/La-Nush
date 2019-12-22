@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './style.css';
 import '../../style.css';
@@ -17,9 +18,12 @@ const Main = () => {
 
             <div className='main-second'>
                <div className='flexible jCenter'>
-                   <button className='button'>
-                       So finden Sie uns
-                   </button>
+                   <Link to='/Contact'>
+                       <button className='button'>
+                           So finden Sie uns
+                       </button>
+                   </Link>
+
                </div>
                 <div className='flexible jCenter'>
                     <span className='second-title'> ÜBER LA‘NUSH</span>
@@ -40,7 +44,7 @@ const Main = () => {
                 <span  className='second-text flexible jCenter'>
                     Ihr persönlicher Beauty – Moment
                 </span>
-                <span  className='second-text flexible'>
+                <span  className='second-text flexible ' id='leistungen'>
                     Als Experte für dauerhafte Haarentfernung mit Diodenlaser
                     erfüllen wir Frauen gleichermaßen wie Männer ihren Traum von traumhafter
                     glatter und zarter Haut. Unsere Beauty Treatments wie Microblading,
@@ -49,16 +53,18 @@ const Main = () => {
                 </span>
             </div>
             <div >
-                <div className='flexible jCenter' id='leistungen'>
+                <div className='flexible jCenter'>
                     <span className='title'>LEISUNGEN</span>
                 </div>
                 <div className='flexible aCenter jCenter'>
                     <Services />
                 </div>
                 <div className='flexible jCenter'>
-                    <button className='button'>
-                        Termin buchen
-                    </button>
+                    <Link to='/DateBooking'>
+                        <button className='button'>
+                            Termin buchen
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

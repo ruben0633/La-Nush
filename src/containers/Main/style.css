@@ -56,3 +56,6 @@
 #leistungen {
     scroll-behavior: smooth;
 }
+.Main {
+    padding-bottom: 100px;
+}

@@ -5,16 +5,16 @@ import './style.css';
 import '../../style.css';
 
 
- import BookSecond from "./BookSecond";
-import BookFirst from "./BookFirst";
 import BookLast from "./BookLast";
+import BookFirst from "./BookFirst";
+import BookSecond from "./BookSecond";
 
 const DateBooking = () => {
     const [state, setState] = useState(1);
-    const onChange = () => {
-        return setState(state +1)
+    const onChange = (type) => {
+        return setState(type === 'dec' ? state -1 : state + 1)
     };
-    const incState = () => {
+    const renderState = () => {
         if(state === 1) {
             return <BookFirst onChange={onChange}/>
         }else if(state === 2) {
@@ -23,7 +23,6 @@ const DateBooking = () => {
            return <BookLast />
         }
     };
-
      return(
         <div className='flexible jCenter'>
             <div className='dataParent'>
@@ -41,7 +40,7 @@ const DateBooking = () => {
                         <div className={classnmaes('bookStep',{activeStep: state === 3})} />
                     </div>
                 </div>
-                {incState()}
+                {renderState()}
             </div>
         </div>
     )

@@ -128,7 +128,7 @@ const BookFirst = ({onChange}) => {
                     </div>
                 </div>
                 <div style={{borderTop: '1px solid #666'}} className='flexible jEnd'>
-                    <button className='bookButton'>Nächster</button>
+                    <button className='bookButton' onClick={onChange}>Nächster</button>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ const BookItem = ({service, persone, price}) => {
     const [ state, setState ] = useState(false);
     const renderState = () => {
         return setState(!state)
-    }
+    };
     return(
         <div className={classnames( 'BookItem flexible aCenter jBetween',  {'actBook':state }  )} onClick={renderState}>
             <div className='flexible aCenter'>

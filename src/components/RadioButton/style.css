@@ -31,3 +31,17 @@
 .radioDisabled {
     border: 2px solid #777777 !important;
 }
+.checkRadioContent {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #a6815b;
+}
+.radioCheck {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #a6815b;
+    margin-right: 5px;
+    cursor: pointer;
+}

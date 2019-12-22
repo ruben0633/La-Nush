@@ -7,8 +7,9 @@ import {
 	HIFU,
 	Contact,
 	Services,
+	Impressum,
 	NailDesign,
-	MicroBladin,
+	MicroBlading,
 	DateBooking,
 	Wimpernwelle,
 	LashesExtension,
@@ -30,8 +31,9 @@ const App = () => {
 					<Route exact path="/contact" component={Contact} />
 					<Route exact path="/services" component={Services} />
 					<Route exact path="/naildesign" component={NailDesign} />
+					<Route exact path = "/impressum" component={Impressum} />
 					<Route exact path="/dateBooking" component={DateBooking} />
-					<Route exact path="/microbladin" component={MicroBladin} />
+					<Route exact path="/microblading" component={MicroBlading} />
 					<Route exact path="/wimpernwelle" component={Wimpernwelle} />
 					<Route exact path="/confidentiality" component={Confidentiality} />
 					<Route exact path="/lashesextension" component={LashesExtension} />

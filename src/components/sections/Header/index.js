@@ -1,16 +1,20 @@
 import React from 'react';
-import './style.css';
-import '../../../style.css';
-import { Image } from '../../index';
-import { FaChevronDown } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+
+import { Image } from '../../index';
+import logo from '../../../assets/logo.png';
+import { FaChevronDown } from "react-icons/fa";
+
+import './style.css';
+import '../../../style.css';
+
 const Header = () => {
     return (
         <div className=' flexible jBetween Header pageContent aCenter'>
             <Link to='/'>
                 <div>
-                    <Image src="http://lanushmuenchen.de/wp-content/uploads/2018/12/Logo-300x89-1.png"></Image>
+                    <Image src={logo}></Image>
                 </div>
             </Link>
             <div className="container purple topBotomBordersIn ">
@@ -35,13 +39,13 @@ const Header = () => {
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/microbladin">
+                                    <NavLink to="/microblading">
                                         MICROBLADING
                                     </NavLink>
                                 </li>
                                 <li>
                                     <NavLink to="/lashesextension">
-                                        LASHES EXTENSION
+                                        WIMPERNVERLÄNGERUNG
                                     </NavLink>
                                 </li>
                                 <li>
@@ -56,7 +60,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <NavLink to="/naildesign">
-                                        NAIL DESIGN
+                                        NAGELDESIGN
                                     </NavLink>
                                 </li>
                                 <li>

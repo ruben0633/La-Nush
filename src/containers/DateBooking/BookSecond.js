@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useState, UseState} from 'react';
+
+import {Portal} from '../../components';
 
 import './style.css';
 import '../../style.css';
-
 const BookSecond = ({onChange}) => {
-    console.log(onChange)
+    const [modalShow, setModalShow] = useState(false);
+    const renderState = () => setModalShow(()=> !modalShow );
     return(
         <div className = 'flexible vertical' style={{paddingTop: '30px'}}>
+            {modalShow ? <Portal onChange={renderState}/> : null}
             <div className = 'flexible vertical'>
                 <p>
                     You selected a booking for Erstes Nachstechen by
@@ -16,7 +19,7 @@ const BookSecond = ({onChange}) => {
                     Formular ein, um mit der Buchung fortzufahren.
                 </p>
                 <div className='flexible aStart'>
-                    <button className='bookButton'>
+                    <button className='bookButton' onClick={renderState}>
                         LOG  IN
                     </button>
                 </div>
@@ -113,8 +116,8 @@ const BookSecond = ({onChange}) => {
                             <textarea className='bookTextArea' />
                         </div>
                         <div className='buttonsParent flexible jBetween'>
-                            <button className='bookButton'>Zurück</button>
-                            <button className='bookButton' onClick={()=>{onChange()}}>Nächster</button>
+                            <button className='bookButton' onClick={()=>{onChange('dec')}}>Zurück</button>
+                            <button className='bookButton' onClick={()=>{onChange('inc')}}>Nächster</button>
                         </div>
                     </form>
                 </div>
@@ -123,4 +126,4 @@ const BookSecond = ({onChange}) => {
     )
 };
 
-export default BookSecond;
+export default BookSecond

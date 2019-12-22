@@ -2,9 +2,10 @@ import Main from './Main';
 import HIFU from "./HIFU";
 import Contact from './Contact';
 import Services from './Services';
+import Impressum from './Impressum';
 import NailDesign from "./ NailDesign";
 import DateBooking from "./DateBooking";
-import MicroBladin from "./MicroBlading";
+import MicroBlading from "./MicroBlading";
 import Wimpernwelle from "./Wimpernwelle";
 import LashesExtension from "./LashesExtension";
 import Confidentiality from "./ Confidentiality";
@@ -16,10 +17,11 @@ import DauerhafteHaarentfernung from './DauerhafteHaarentfernung';
 export {
     Main,
     HIFU,
-    Services,
     Contact,
+    Services,
+    Impressum,
     NailDesign,
-    MicroBladin,
+    MicroBlading,
     DateBooking,
     Wimpernwelle,
     LashesExtension,
