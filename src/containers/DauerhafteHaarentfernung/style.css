@@ -31,3 +31,21 @@
 .PermanentHairRemoval {
     margin-bottom: 100px;
 }
+.service-price-block {
+    padding: 30px 0;
+    border-bottom: 1px  dashed #A6815B ;
+}
+div:nth-child(5) > div.LineText{
+    width: 100%;
+}
+ div:nth-child(6) > div.LineText {
+    width: 100%;
+}
+div:nth-child(7) > div.LineText {
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .PermanentHairRemoval_title .title_content{
+        margin: 10px 0;
+    }
+}

@@ -13,9 +13,9 @@ const Footer = () => {
     return (
         <div className='Footer'>
             <div className='size'>
-                <div className='flexible jBetween'>
+                <div className='flexible jBetween footResp'>
                     <div className='flexible vertical footRight aCenter'>
-                        <Image src={logo}/>
+                        <Image src={logo} className='footerImage'/>
                         <div className='flexible footIconParent jCenter'>
                             <FaEnvelope className='envelopeIcon'/>
                             <a href="https://www.facebook.com/lanushmuc/">
@@ -27,7 +27,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='flexible aCenter jCenter grow footLeft'>
-                        <div className='flexible vertical' style={{textAlign:'center'}}>
+                        <div className='flexible vertical footerText'  style={{textAlign:'center'}}>
                             <span>Westendstr 151</span>
                             <span>80339 München</span>
                             <span>Tel. +49 89 54316454</span>
@@ -36,7 +36,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flexible jCenter'>
+                <div className='flexible jCenter lastText'>
                     <p style={{marginTop: '20px'}}>© Copyright – La‘Nush |
                         <Link to='/Impressum'> Website created by webfulpro.  Impressum. Datenschutz.</Link>
                     </p>

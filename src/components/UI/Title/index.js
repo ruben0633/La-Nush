@@ -20,10 +20,10 @@ const Title = ({
         style={{width: width}}
          className={classnames('title_container', className)}>
             <div className="title_content">
-                <h2>{title1}</h2>
+                <p className='h2'>{title1}</p>
                 {title1 && title2 && <h2>{title2}</h2>}
-                <h3>{subTitle}</h3>
-                <span>{desc1}</span>
+                <p className='h3'>{subTitle}</p>
+                <p>{desc1}</p>
                 {desc1 && desc2 && <p>{desc2}</p>}
             </div>
         </div>

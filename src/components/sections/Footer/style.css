@@ -40,3 +40,27 @@
 .footLeft {
     width: 35%;
 }
+@media screen and (max-width: 730px) {
+    .Footer {
+        height: 450px;
+    }
+    .footLeft {
+        width: 100%;
+    }
+    .footRight {
+        width: 100%;
+    }
+    .footResp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lastText {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 430px) {
+    .footerImage {
+        width: 80%;
+    }
+}

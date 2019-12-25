@@ -31,3 +31,11 @@ text-align: justify;
 .HIFU {
     margin-bottom: 100px;
 }
+.HIFUMargin {
+    margin-right: 30px;
+}
+@media screen and (max-width: 540px) {
+    .HIFUMargin {
+        margin: 0 15px 0 15px;
+    }
+}

@@ -2,21 +2,27 @@ import React from 'react';
 
 import './style.css';
 import '../../style.css';
-import {Title, LineText, InfoCard} from '../../components';
+import { LineText, InfoCard} from '../../components';
 
 const   HIFU = () => {
     return(
  <article className="HIFU">
-     <div className="HIFUTitle">
-         <Title
-             title1="HIFU"
-             title2="ist ein hochintensiver fokussierter Ultraschall"
-             desc1="HIFU ist ein hochintensiver fokussierter Ultraschall dass zur Haut- und Gesichtsstraffung sowie Faltenreduktion angewendet wird. Ein Lifting ohne den Einsatz von Nadeln, Skalpell oder Füllmaterialien.
-            Wenn Radiofrequenz, Needling &amp; Co an ihre Grenzen stoßen, kann der hochintensive fokussierte Ultraschall (HIFU) für einen Liftingeffekt sorgen. Ohne die Epidermis zu schädigen, setzt die Behandlung unmittelbar in den tiefen Hautschichten bis hin zum SMAS an. Gezielt wird eine Straffung des Gesichts, Halses und Dekolletés provoziert. Problemzonen wie Hängewangen, erschlaffte Augenpartien oder ein Doppelkinn können damit behandelt werden."
-             width="632px"
-             desc2="Im Gegensatz zum Laser, dass von außen nach innen in die Haut eindringt, umgeht das HIFU die  Oberfläche der Haut. Es konzentriert sich ganz auf die tiefen Hautschichten, in denen Kollagen angereichert ist. Die HIFU Ultraschall-Technologie arbeitet von innen nach aussen und hilft der Haut nicht-invasiv zu straffen. Das Treatment empfiehlt sich für alle Kunden, die ein natürlich wirkendes Lifting erzielen möchten und dabei auf Ausfallzeiten verzichten möchten."
-             flexName="flexible jEnd aCenter"
-         />
+     <div className='HIFUMargin'>
+         <div className='flexible vertical aEnd'>
+             <div className='sectionsTitleBlock '>
+                 <p className='sectionsGoldStyle'>
+                     HIFU
+                 </p>
+                 <p className='sectionsTitleSmallGold'>ist ein hochintensiver fokussierter Ultraschall</p>
+                 <p className='secondaryGrey'>
+                     HIFU ist ein hochintensiver fokussierter Ultraschall dass zur Haut- und Gesichtsstraffung sowie Faltenreduktion angewendet wird. Ein Lifting ohne den Einsatz von Nadeln, Skalpell oder Füllmaterialien.
+                     Wenn Radiofrequenz, Needling & Co an ihre Grenzen stoßen, kann der hochintensive fokussierte Ultraschall (HIFU) für einen Liftingeffekt sorgen. Ohne die Epidermis zu schädigen, setzt die Behandlung unmittelbar in den tiefen Hautschichten bis hin zum SMAS an. Gezielt wird eine Straffung des Gesichts, Halses und Dekolletés provoziert. Problemzonen wie Hängewangen, erschlaffte Augenpartien oder ein Doppelkinn können damit behandelt werden.
+                 </p>
+                 <p className='sectionsTitleBlockSecondText secondaryGrey'>
+                     Im Gegensatz zum Laser, dass von außen nach innen in die Haut eindringt, umgeht das HIFU die  Oberfläche der Haut. Es konzentriert sich ganz auf die tiefen Hautschichten, in denen Kollagen angereichert ist. Die HIFU Ultraschall-Technologie arbeitet von innen nach aussen und hilft der Haut nicht-invasiv zu straffen. Das Treatment empfiehlt sich für alle Kunden, die ein natürlich wirkendes Lifting erzielen möchten und dabei auf Ausfallzeiten verzichten möchten.
+                 </p>
+             </div>
+         </div>
      </div>
      <div className='size'>
          <div className='row flexible jBetween aStart'>

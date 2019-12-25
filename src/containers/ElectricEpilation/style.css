@@ -18,3 +18,22 @@
 .ElectricEpilation {
     padding-bottom: 100px;
 }
+
+.TitleOfelectro {
+    margin: 100px 0;
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .LineText {
+        margin-bottom: 40px;
+    }
+    .newSize {
+        width: 65%;
+    }
+}

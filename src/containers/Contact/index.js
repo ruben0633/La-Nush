@@ -4,6 +4,7 @@ import ContactMap from '../../components/Map';
 
 import { Image } from '../../components'
 
+import logo from '../../assets/logo.png';
 import './style.css';
 import '../../style.css';
 
@@ -13,14 +14,14 @@ const Contact = () => {
     return(
         <div className='flexible jCenter'>
             <div className='dataParent flexible jBetween vertical'>
-                <div className='flexible jBetween'>
+                <div className='flexible jBetween contactParent'>
                     <div className='map-parent'>
                         <ContactMap />
                     </div>
 
                     <div className='flexible vertical  grow aCenter'>
                         <span className='contact-title'>Kontakt</span>
-                        <Image src="http://lanushmuenchen.de/wp-content/uploads/2018/12/Logo-300x89-1.png" />
+                        <Image className='contactImage' src={logo} />
                         <div className='flexible vertical contact-info'>
                             <span>Westendstr 151</span>
                             <span>80339 München</span>
@@ -29,13 +30,14 @@ const Contact = () => {
                             <span>Email: info@lanush.de</span>
                         </div>
                     </div>
+                    <div className='flexible vertical aEnd'>
+                        <span className='info-middle'>Anfahrt mit den öffentlichen Verkehrsmitteln</span>
+                        <span>Mit der S-Bahn: S 7 bis Heimeranplatz</span>
+                        <span>Mit der U-Bahn: U4/U5 bis Heimeranplatz oder Westendstraße</span>
+                        <span>Mit der Tram: Tram 18 oder 19 bis Barthstraße</span>
+                    </div>
                 </div>
-                <div className='flexible vertical aEnd'>
-                    <span className='info-middle'>Anfahrt mit den öffentlichen Verkehrsmitteln</span>
-                    <span>Mit der S-Bahn: S 7 bis Heimeranplatz</span>
-                    <span>Mit der U-Bahn: U4/U5 bis Heimeranplatz oder Westendstraße</span>
-                    <span>Mit der Tram: Tram 18 oder 19 bis Barthstraße</span>
-                </div>
+
                 <div className='flexible jCenter vertical aCenter'>
                     <span className='title'>Haben Sie eine Frage? Schreiben Sie uns!</span>
                     <div className='user-contact-block flexible vertical aCenter'>

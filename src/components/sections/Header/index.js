@@ -1,27 +1,38 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
-
-import { Image } from '../../index';
-import logo from '../../../assets/logo.png';
-import { FaChevronDown } from "react-icons/fa";
-
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import '../../../style.css';
+import { Image } from '../../index';
+import {BurgerMenu,Dropdown} from '../../index';
 
+import logo from '../../../assets/logo.png';
+import { FaChevronDown } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import classnames from 'classnames';
 const Header = () => {
+    let [whenClickOnBurger, setwhenClickOnBurger] = useState(false);
+    let [showOrNot, setshowOrNot] = useState(false);
+    const handleClick = () => {
+        setwhenClickOnBurger(!whenClickOnBurger);
+    }
+    const handleShowOrNot = () => {
+        ( window.scrollY > 10) ? setshowOrNot(true) : setshowOrNot(false);
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', handleShowOrNot)
+    })
     return (
-        <div className=' flexible jBetween Header pageContent aCenter'>
+        <div className={classnames('flexible jBetween Header pageContent aCenter', {'showOrNot' : showOrNot})}>
             <Link to='/'>
                 <div>
-                    <Image src={logo}></Image>
+                    <Image src={logo} className='headerLogo'></Image>
                 </div>
             </Link>
-            <div className="container purple topBotomBordersIn ">
+            <div className="container purple topBotomBordersIn flexible aCenter">
                 <ul className='flexible'>
                     <div className="contentSecondLi">
                         <li>
-                            <NavLink exact to='/'  >
+                            <NavLink exact to='/'>
                                 HOME
                             </NavLink>
                         </li>
@@ -32,43 +43,10 @@ const Header = () => {
                                 LEISTUNGEN
                                 <FaChevronDown className="FaChevronDown" />
                             </a>
-                            <ul className='dropdownMenu'>
-                                <li>
-                                    <NavLink to="/electricepilation">
-                                        NEEDLE / ELECTRIC EPILATION
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/microblading">
-                                        MICROBLADING
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/lashesextension">
-                                        WIMPERNVERLÄNGERUNG
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/DauerhafteHaarentfernung">
-                                        DAUERHAFTEN HAATENTFERNUNG
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/wimpernwelle">
-                                        WEMPERNWELLE
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/naildesign">
-                                        NAGELDESIGN
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/hifu'>
-                                        HIFU
-                                    </NavLink>
-                                </li>
-                            </ul>
+                            <Dropdown
+                                onClick = {handleClick}
+                                opened = {whenClickOnBurger}
+                                show />
                         </li>
                     </div>
                     <div className="contentSecondLi">
@@ -93,6 +71,15 @@ const Header = () => {
                         </li>
                     </div>
                 </ul>
+                <BurgerMenu
+                    onClick = {handleClick}
+                />
+                <Dropdown
+                    onClick = {handleClick}
+                    opened
+                    whenResize
+                    className={whenClickOnBurger}
+                />
             </div>
         </div>
     )

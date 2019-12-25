@@ -18,14 +18,6 @@ import {
 } from '../../../assets/HomePage';
 
 import Image from '../../../components/Image';
-import {
-    DauerhafteHaarentfernung,
-    ElectricEpilation,
-    LashesExtension,
-    MicroBlading,
-    NailDesign,
-    Wimpernwelle
-} from "../../index";
 
 const images = [
     {
@@ -65,7 +57,7 @@ const images = [
     },
 ];
 const items = images.map((item) => (
-   <div key={item.id}  className='flexible vertical aCenter jCenter itemParent' >
+   <div key={item.id}  className='flexible vertical jCenter itemParent' >
           <Image className='carousel-item' src={item.image} />
       <div className='item-text flexible jCenter'>
           <span >{item.text}</span>
@@ -81,7 +73,15 @@ const Carousel = () => (
                 speed: 2000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows: true
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 320,
+                        settings: {
+                            arrows: false
+                        }
+                    }
+                    ]
             }}
         >
            <Link to='/LashesExtension'>

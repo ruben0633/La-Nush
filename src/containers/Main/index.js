@@ -10,13 +10,13 @@ import { Services }  from '../../containers';
 const Main = () => {
     return(
         <div className='Main' >
-            <div className='main-first flexible aCenter jCenter vertical' style={{backgroundImage:`url(${rrs})`}} >
+            <div className='main-first flexible aCenter jCenter vertical leis'  style={{backgroundImage:`url(${rrs})`}} >
                 <span className='italic-text'>Herzlich Willkommen im</span>
                 <span className='italic-text' >La‘Nush</span>
                 <span className='italic-text'>Laser & Beauty Center</span>
             </div>
 
-            <div className='main-second'>
+            <div className='main-second size'>
                <div className='flexible jCenter'>
                    <Link to='/Contact'>
                        <button className='button'>

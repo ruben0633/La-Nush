@@ -10,7 +10,7 @@ html {
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "Open Sant";
+    font-family: "Open Sans",Arial,sans-serif” !important;
     outline: none;
 }
 .flexible {
@@ -79,6 +79,9 @@ html {
     margin: 30px 0;
     font-weight: 700;
 }
+.secondaryGrey {
+    color: #666;
+}
 .secondary-button {
     outline: none;
     color: white;
@@ -117,4 +120,97 @@ html {
     margin-top: 28px;
     cursor: pointer;
     outline: none;
+}
+.sectionsGoldStyle {
+    font-size: 42px;
+    color: #A6815B!important;
+    line-height: 2em;
+    word-wrap: break-word;
+}
+.sectionsTitleBlock {
+    width: 50%;
+    margin: 105px 0;
+}
+.sectionsTitleSmallGold {
+    color: #a6815b;
+    line-height: 2.9em;
+    font-size: 26px;
+}
+.sectionsTitleText {
+    font-size: 14px;
+    margin: 70px 0;
+}
+.LineText {
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .sectionsTitleBlock {
+        width: 60%;
+        margin: 105px 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .sectionsTitleBlock {
+        width: 70%;
+        margin: 105px 0;
+    }
+    .sectionsGoldStyle {
+        font-size: 38px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .LineText {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 750px) {
+    .sectionsTitleBlock {
+        width: 75%;
+        margin: 105px 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .sectionsTitleBlock {
+        width: 80%;
+        margin: 105px 0;
+    }
+    .sectionsTitleSmallGold {
+        color: #a6815b;
+        line-height: 2.9em;
+        font-size: 24px;
+    }
+    .sectionsGoldStyle {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .sectionsTitleBlock {
+        width: 100%;
+        margin: 105px 0;
+    }
+    .sectionsTitleSmallGold {
+        color: #a6815b;
+        line-height: 2.9em;
+        font-size: 20px;
+    }
+    .sectionsGoldStyle {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .sectionsTitleBlock {
+        margin: 105px 0;
+    }
+    .sectionsTitleSmallGold {
+        color: #a6815b;
+        line-height: 2.9em;
+        font-size: 18px;
+    }
+    .sectionsGoldStyle {
+        font-size: 30px;
+    }
 }

@@ -61,3 +61,45 @@ div:nth-child(3) > div.flexible.aCenter.jCenter > div > div > div > div > div.sl
 div:nth-child(3) > div.flexible.aCenter.jCenter > div > div > button.slick-arrow.slick-prev{
     left : -35px;
 }
+@media screen and (max-width: 320px) {
+    .item-text span {
+        line-height: 20px;
+        font-size: 10px !important;
+    }
+}
+@media screen and (max-width: 390px) {
+    .carousel-item {
+        height: 177px;
+    }
+    .item-text {
+        top: -95px;
+    }
+    .item-text span {
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width: 580px) {
+  .Main > div:nth-child(3) > div.flexible.aCenter.jCenter > div > div > div{
+        height: 317px;
+    }
+    .item-text {
+        top: -176px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .item-text span {
+       font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .item-text {
+        top: -95px;
+    }
+.Main > div:nth-child(3) > div.flexible.aCenter.jCenter > div > div{
+    height: 182px;
+}
+}

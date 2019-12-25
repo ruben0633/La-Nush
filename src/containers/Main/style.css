@@ -59,3 +59,28 @@
 .Main {
     padding-bottom: 100px;
 }
+
+@media screen and (max-width: 390px) {
+    .Main .leis span {
+        font-size: 25px;
+    }
+.Main > div.main-second.size > div:nth-child(2) > span {
+        font-size: 18px;
+    }
+   .Main > div:nth-child(3) > div:nth-child(1) > span {
+       font-size: 18px;
+    }
+    .main-second {
+        margin-bottom: 0;
+    }
+    .Main .title {
+        margin: 0;
+    }
+    .Main > div:nth-child(3) > div.flexible.aCenter.jCenter > div > div > div > div {
+        width: 245px;
+    }
+  .Main > div:nth-child(3) > div.flexible.aCenter.jCenter > div > div{
+        height: 200px;
+    }
+
+}

@@ -2,20 +2,24 @@ import React from 'react';
 
 import './style.css';
 import '../../style.css';
-import {Title, LineText, InfoCard} from '../../components';
+import { LineText, InfoCard} from '../../components';
 
 const LashesExtension = () => {
   return (
     <article className="LashesExtension">
-      <div className="Lashes_title">
-        <Title
-          title1="WIMPERNVERLÄNGERUNG"
-          desc1="Schöne und volle Wimpern, und das ganz ohne Wimperntusche? Eine Wimpernverlängerung bei LaNush in München macht es möglich! Sparen Sie sich das morgendliche Tuschen und begeistern Sie mit einem ausdrucksstarken Blick. Ihre Wimpernverlängerung verleiht Ihren Augen mehr Weiblichkeit und ist selbst für Sportaktivitäten, Saunagänge und Kontaktlinsenträger geeignet. Lassen Sie sich in unserem Studio im Münchner Westend über die die 1:1sowie die Volumen Methode beraten!!"
-          className="LashesExtension"
-          flexName="flexible jEnd aCenter"
-          width="667px"/>
-      </div>
-
+        <div className='flexible jEnd wimperBlock'>
+            <div className='sectionsTitleBlock'>
+                <p className='sectionsGoldStyle '>
+                    WIMPERNVERLÄNGERUNG
+                </p>
+                <p>Schöne und volle Wimpern, und das ganz ohne Wimperntusche? Eine
+                    Wimpernverlängerung bei LaNush in München macht es möglich! Sparen Sie sich das
+                    morgendliche Tuschen und begeistern Sie mit einem ausdrucksstarken Blick. Ihre
+                    Wimpernverlängerung verleiht Ihren Augen mehr Weiblichkeit und ist selbst für Sportaktivitäten
+                    , Saunagänge und Kontaktlinsenträger geeignet. Lassen Sie sich in
+                    unserem Studio im Münchner Westend über die die 1:1sowie die Volumen Methode beraten!!</p>
+            </div>
+        </div>
       <section className="size">
 
         <div className="row flexible aStart jBetween">
@@ -96,31 +100,31 @@ const LashesExtension = () => {
               <LineText
                 lineStyle="1px dashed"
                 textTitleLeft ={[
-                    "Replacement of",
-                    "individual"
+                   "Neubesatz Einzeltechnik"
                 ]}
-                flexName="flexible jBetween aEnd"
+                flexName="flexible jBetween aCenter"
                 textTitleRight="129 €"
                 width="100%"/>
 
                 <LineText
                 lineStyle="1px dashed"
                 textTitleLeft = {[
-                    'Fill up',
+                    'Auffüllen',
                     '3 weeks ago € 59',
                     'after 4 weeks € 69',
                     'after 6 weeks new price'
 
                 ]}
-                
+
                 flexName="flexible jBetween aStart"
                 textTitleRight="59-69 €"
-                width="100%"/>
+                width="100%"
+                />
 
             <LineText
                 lineStyle="1px dashed"
                 textTitleLeft ={["eyelashes Distance"]}
-                flexName="flexible jBetween aEnd"
+                flexName="flexible jBetween aCenter"
                 textTitleRight="15 €"
                 width="100%"/>
             </div>
@@ -132,10 +136,10 @@ const LashesExtension = () => {
                     "New 3D / 4D technology"
                 ]}
                 textTitleRight="149 €"
-                flexName="flexible jBetween aEnd"
+                flexName="flexible jBetween aCenter"
                 width="100%"/>
 
-                
+
             <LineText
                 lineStyle="1px dashed"
                 textTitleLeft = {[
@@ -145,7 +149,7 @@ const LashesExtension = () => {
                     'after 6 weeks new price'
 
                 ]}
-                
+
                 flexName="flexible jBetween aStart"
                 textTitleRight="79-109 €"
                 width="100%"/>

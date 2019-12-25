@@ -1,21 +1,19 @@
 .eyeLash_container {
     padding: 27px 0;
 }
-
-.Lashes_title .flexible{
-height: 100vh;
-}
-
-
 .LashesExtension .size {
     width: 80%;
     margin: 0 auto;
 }
-
-
 .miniSize {
     width: 70%;
     margin: 0 auto;
+}
+.rightPrice {
+    margin-top: 29px;
+}
+.wimperBlock {
+    margin-right: 100px;
 }
 
 .eyeLash_container .sideLeft p:not(:first-of-type),
@@ -30,3 +28,84 @@ height: 100vh;
 .LashesExtension {
     margin-bottom:  100px;
 }
+
+/*
+
+.eyeLash_container > div.sideLeft p {
+    padding: 0!important;
+}
+*/
+@media screen and (max-width: 1100px) {
+    .eyeLash_container > div.sideLeft p,
+    .eyeLash_container > div.sideRight p
+    {
+        padding: 0!important;
+    }
+}
+@media screen and (max-width: 900px) {
+    #root > article > section > div.miniSize > div.eyeLash_container.flexible.jBetween {
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .eyeLash_container > div.sideLeft p,
+    .eyeLash_container > div.sideRight p
+    {
+        padding: 0!important;
+    }
+
+    .eyeLash_container > div.sideLeft {
+        width:  100%;
+    }
+    .eyeLash_container > div.sideRight {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .Lashes_title .flexible {
+        height: auto;
+    }
+    .LashesExtension {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .title_container .LashesExtension .flexible .jEnd {
+        width: 100%;
+    }
+    .title_container .LashesExtension .flexible .jEnd .title_content .h2 {
+        font-size: 18px !important;
+    }
+    .miniSize {
+        width: 100%;
+    }
+    .eyeLash_container > div.sideLeft  .textTitleLeft  p {
+            padding: 5px!important;
+        line-height: initial!important;
+        font-size: 14px;
+    }
+}
+
+.eyeLash_container > div.sideLeft > div:nth-child(2) > div > div p,
+.eyeLash_container> div.sideRight > div:nth-child(2) > div > div p
+{
+    padding-top: 25px;
+}
+@media screen and (max-width: 470px) {
+    .wimperBlock {
+        margin-right: 0;
+    }
+    .eyeLash_container {
+        display: flex;
+        flex-direction: column;
+    }
+         .eyeLash_container .sideLeft  {
+              width: 100%;
+          }
+    .eyeLash_container .sideRight  {
+        width: 100%;
+    }
+}
+

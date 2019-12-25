@@ -1,24 +1,30 @@
 import React from 'react';
 import './style.css';
 import '../../style.css';
-import {InfoCard, LineText, Title} from '../../components';
+import {InfoCard, LineText} from '../../components';
 const NailDesign = () => {
     return(
         <div className="NailDesign">
-          <div className='flexible jEnd titleContent'>
-              <Title
-                  title1="NAGELDESIGN"
-                  desc1="Das Zauberwort für ein perfektes Finish topgepflegter Nägel ist eine Shellack oder Gel Maniküre. Genießen Sie perfektes Nageldesign, absolute Kratzfestigkeit und einen makellosen Glanz – und das bis zu vier Wochen lang!"
-                  desc2="Gerne modellieren wir auch vereinzelte Nägel und beraten Sie bei der Farbauswahl."
-                  width="588px"
-                  flexNmae="flexible jEnd aCenter"
-              />
-          </div>
-            <div className="row flexible aStart jBetween">
+              <div className='wimpMargin'>
+                  <div className='flexible vertical '>
+                      <div className='sectionsTitleBlock '>
+                          <p className='sectionsGoldStyle'>
+                              NAGELDESIGN
+                          </p>
+                          <p className='secondaryGrey'>
+                              Das Zauberwort für ein perfektes Finish topgepflegter Nägel ist eine Shellack oder Gel Maniküre. Genießen Sie perfektes Nageldesign, absolute Kratzfestigkeit und einen makellosen Glanz – und das bis zu vier Wochen lang!
+
+                          </p>
+                          <p className='sectionsTitleBlockSecondText secondaryGrey'>  Gerne modellieren wir auch vereinzelte Nägel und beraten Sie bei der Farbauswahl..</p>
+                      </div>
+                  </div>
+              </div>
+
+            <div className="row flexible aStart jBetween size">
                 <LineText
                     lineStyle="1px solid rgb(166, 129, 91)"
                     headTitle="SHELLAC"
-                    width="47.5%"/>
+                   />
 
                 <InfoCard
                     textData={['Wer nach einem kratzfesten, langanhaltenden dabei aber natürlichen Lack für seine' +
@@ -78,11 +84,11 @@ const NailDesign = () => {
                     </div>
                 </div>
             </div>
-            <div className="row flexible aStart jBetween">
+            <div className="row flexible aStart jBetween size">
                 <LineText
                     lineStyle="1px solid rgb(166, 129, 91)"
                     headTitle="GELNÄGEL / Nagelmodellage"
-                    width="47.5%"/>
+                    />
 
                 <InfoCard
                     textData={['Die Nagelmodellage ist die künstliche Verlängerung und Verstärkung des \n' +
@@ -100,7 +106,7 @@ const NailDesign = () => {
                     bgColor="rgba(236,204,164,0.41)"
                 />
             </div>
-            <div className='shelackPrices'>
+            <div className='shelackPrices size'>
                 <LineText
                     lineStyle="1px solid"
                     textColor='rgb(166, 129, 91)"'

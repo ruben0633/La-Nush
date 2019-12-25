@@ -1,7 +1,4 @@
-.NailDesign {
-    width: 80%;
-    margin: 0 auto;
-}
+
 .row {
     padding-top: 100px;
 }
@@ -18,4 +15,21 @@
 }
 .infoCardParent {
     border-bottom: 1px dashed #AF7E48;
+}
+#root > article > div.second-size > div{
+    width: 100%!important;
+}
+
+#root > div.NailDesign > div:nth-child(3) > div:nth-child(1){
+    width: 100% !important;
+}
+
+@media  screen and (max-width: 700px) {
+
+}
+
+@media  screen and (max-width: 510px) {
+    #root > article > div.size > div > div.LineText {
+        width: 100%!important;
+    }
 }
