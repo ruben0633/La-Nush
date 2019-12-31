@@ -29,15 +29,15 @@ const Contact = () => {
                             <span>Mob: +49 176 57891191</span>
                             <span>Email: info@lanush.de</span>
                         </div>
+                        <div className='flexible vertical  infoMiddleParent'>
+                        <p className='info-middle'>Anfahrt mit den öffentlichen Verkehrsmitteln</p>
+                        <p>Mit der S-Bahn: S 7 bis Heimeranplatz</p>
+                        <p>Mit der U-Bahn: U4/U5 bis Heimeranplatz oder Westendstraße</p>
+                        <p>Mit der Tram: Tram 18 oder 19 bis Barthstraße</p>
                     </div>
-                    <div className='flexible vertical aEnd'>
-                        <span className='info-middle'>Anfahrt mit den öffentlichen Verkehrsmitteln</span>
-                        <span>Mit der S-Bahn: S 7 bis Heimeranplatz</span>
-                        <span>Mit der U-Bahn: U4/U5 bis Heimeranplatz oder Westendstraße</span>
-                        <span>Mit der Tram: Tram 18 oder 19 bis Barthstraße</span>
                     </div>
                 </div>
-
+               
                 <div className='flexible jCenter vertical aCenter'>
                     <span className='title'>Haben Sie eine Frage? Schreiben Sie uns!</span>
                     <div className='user-contact-block flexible vertical aCenter'>

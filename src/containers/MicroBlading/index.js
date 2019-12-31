@@ -24,7 +24,7 @@ const MicroBlading = () => {
           <LineText
             lineStyle="1px solid rgb(166, 129, 91)"
             headTitle="Ablauf der Behandlung"
-            width="47.5%"/>
+            />
 
           <InfoCard
             textData={["Sie erhalten eine persönliche und typgerechte Beratung, welche auf Ihre Brauen – und Gesichtsform sowie Haarfarbe abgestimmt wird. Nach der Ausmessung Ihrer Augenbrauen werden die zu behandelnden Stellen lokal betäubt.",
@@ -37,7 +37,7 @@ const MicroBlading = () => {
           <LineText
             lineStyle="1px solid rgb(166, 129, 91)"
             headTitle="Was ist vor der Behandlung zu beachten?"
-            width="47.5%"/>
+            />
 
           <InfoCard
             textData={['Meiden Sie in den ersten 7 – 10 Tagen jegliche Art von Sport, Solarium, Sonne, Sauna oder das Schminken an der pigmentierten Stelle. Verwenden Sie an den entsprechenden Partien keine Peelings. ']}
@@ -52,42 +52,25 @@ const MicroBlading = () => {
             textColor="#a6815b"
             width="100%"/>
 
-        <LineText
-            lineStyle="1px dashed"
-            textTitleLeft={["Microblading / Schattierung"]}
-            textTitleRight="300€"
-            flexName="flexible jBetween"
-            width="100%"/>
-
-        <LineText
-            lineStyle="1px dashed"
-            textTitleLeft={[
-                "Auffrischung",
-                "innerhalb der ersten 6 Monate"
-            ]}
-            textTitleRight="90€"
-            flexName="flexible jBetween aEnd"
-            width="100%"
-            />
-
-        <LineText
-            lineStyle="1px dashed"
-            textTitleLeft={[
-                "Erstes Nachstechen"
-            ]}
-            textTitleRight="150€"
-            flexName="flexible jBetween"
-            width="100%"/>
-
-        <LineText
-            lineStyle="1px dashed"
-            textTitleLeft={[
-                "Korrektur/ Nacharbeit Fremdstudio"
-            ]}
-            textTitleRight="200€    "
-            flexName="flexible jBetween"
-            width="100%"/>
-
+          <div className='service-price-block flexible jBetween'>
+            <p>Microblading / Schattierung</p>
+            <p>300€</p>
+          </div>
+          <div className='service-price-block flexible jBetween'>
+            <div>
+              <p style={{lineHeight:'25px'}}>Auffrischung,</p>
+              <p>innerhalb der ersten 6 Monate</p>
+            </div>
+            <div className='flexible aEnd microblandingPrice'><p>90€</p></div>
+          </div>
+          <div className='service-price-block flexible jBetween'>
+            <p>Erstes Nachstechen</p>
+            <p>150€</p>
+          </div>
+          <div className='service-price-block flexible jBetween'>
+            <p>Korrektur/ Nacharbeit Fremdstudio</p>
+            <p>200€</p>
+          </div>
         </section>
       </section>
     </article>

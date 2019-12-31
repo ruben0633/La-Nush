@@ -23,12 +23,21 @@
     width: 70%;
     margin: 0 auto;
 }
-.MicroBlading .textTitle {
-    padding: 20px 0;
+.MicroBlading .textTitle * {
+    padding: 0px;
 }
-.MicroBlading .textTitle p{
-    padding: 0;
-}
+
 .MicroBlading {
     margin-bottom: 100px;
+}
+@media screen and (max-width: 450px) {
+    .microblandingPrice {
+       margin-left: 10px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .microblandingPrice {
+      display: flex;
+      align-items: center;
+    }
 }

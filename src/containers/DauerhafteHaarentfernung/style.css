@@ -49,3 +49,9 @@ div:nth-child(7) > div.LineText {
         margin: 10px 0;
     }
 }
+@media screen and (max-width: 490px) {
+    #root > .PermanentHairRemoval > div > div {
+        width: 90%;
+        margin: 0 auto ;
+    }
+}

@@ -12,7 +12,7 @@ const LashesExtension = () => {
                 <p className='sectionsGoldStyle '>
                     WIMPERNVERLÄNGERUNG
                 </p>
-                <p>Schöne und volle Wimpern, und das ganz ohne Wimperntusche? Eine
+                <p className='secondaryGrey'>Schöne und volle Wimpern, und das ganz ohne Wimperntusche? Eine
                     Wimpernverlängerung bei LaNush in München macht es möglich! Sparen Sie sich das
                     morgendliche Tuschen und begeistern Sie mit einem ausdrucksstarken Blick. Ihre
                     Wimpernverlängerung verleiht Ihren Augen mehr Weiblichkeit und ist selbst für Sportaktivitäten
@@ -94,66 +94,41 @@ const LashesExtension = () => {
             headTitle="Wimpernverlängerung"
             textColor="#a6815b"
             width="100%"/>
-
-          <div className="eyeLash_container flexible jBetween">
-            <div className="sideLeft">
-              <LineText
-                lineStyle="1px dashed"
-                textTitleLeft ={[
-                   "Neubesatz Einzeltechnik"
-                ]}
-                flexName="flexible jBetween aCenter"
-                textTitleRight="129 €"
-                width="100%"/>
-
-                <LineText
-                lineStyle="1px dashed"
-                textTitleLeft = {[
-                    'Auffüllen',
-                    '3 weeks ago € 59',
-                    'after 4 weeks € 69',
-                    'after 6 weeks new price'
-
-                ]}
-
-                flexName="flexible jBetween aStart"
-                textTitleRight="59-69 €"
-                width="100%"
-                />
-
-            <LineText
-                lineStyle="1px dashed"
-                textTitleLeft ={["eyelashes Distance"]}
-                flexName="flexible jBetween aCenter"
-                textTitleRight="15 €"
-                width="100%"/>
-            </div>
-
-            <div className="sideRight">
-              <LineText
-                lineStyle="1px dashed"
-                textTitleLeft={[
-                    "New 3D / 4D technology"
-                ]}
-                textTitleRight="149 €"
-                flexName="flexible jBetween aCenter"
-                width="100%"/>
-
-
-            <LineText
-                lineStyle="1px dashed"
-                textTitleLeft = {[
-                    'Fill up',
-                    '3 weeks ago € 79',
-                    'after 5 weeks 109 €',
-                    'after 6 weeks new price'
-
-                ]}
-
-                flexName="flexible jBetween aStart"
-                textTitleRight="79-109 €"
-                width="100%"/>
-            </div>
+          <div className='priceListParent flexible jBetween'>
+              <div className='prceListLeftSide'>
+               <div className='service-price-block flexible jBetween'>
+                    <p>Neubesatz Einzeltechnik</p>
+                    <p>129€</p>
+                  </div>
+                  <div className='service-price-block flexible jBetween'>
+                    <div>
+                    <p>Auffüllen</p>
+                    <p>vor 3 Wochen 59 €</p>
+                    <p>nach 4 Wochen 69 €</p>
+                    <p>nach 6 Wochen Neupreis</p>
+                    </div>
+                    <p>129€</p>
+                  </div>
+                  <div  className='service-price-block flexible jBetween'>
+                    <p>Wimpernentfernung</p>
+                    <p>15€</p>
+                  </div>
+              </div>
+              <div className='priceListRightSide'>
+              <div className='service-price-block flexible jBetween'>
+                    <p>Neubesatz 3D/ 4D Technik</p>
+                    <p>149€</p>
+                  </div>
+                  <div className='service-price-block flexible jBetween'>
+                    <div>
+                    <p>Auffüllen</p>
+                    <p>vor 3 Wochen 59 €</p>
+                    <p>nach 4 Wochen 69 €</p>
+                    <p>nach 6 Wochen Neupreis</p>
+                    </div>
+                    <p>129€</p>
+                  </div>
+              </div>
           </div>
 
         </div>

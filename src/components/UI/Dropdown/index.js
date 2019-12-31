@@ -45,7 +45,7 @@ const Dropdown = ({
                         </li>
                         <li onClick={handleState}>
                             <NavLink to="/lashesextension">
-                                LASHES EXTENSION
+                            WIMPERNVERLÄNGERUNG
                             </NavLink>
                         </li>
                         <li onClick={handleState}>
@@ -60,7 +60,7 @@ const Dropdown = ({
                         </li>
                         <li onClick={handleState}>
                             <NavLink to="/naildesign">
-                                NAIL DESIGN
+                            NAGELDESIGN
                             </NavLink>
                         </li>
                         <li onClick={handleState}>
@@ -99,7 +99,7 @@ const Dropdown = ({
                         </li>
                         <li onClick={handle}>
                             <NavLink to="/lashesextension">
-                                LASHES EXTENSION
+                            WIMPERNVERLÄNGERUNG
                             </NavLink>
                         </li>
                         <li onClick={handle}>
@@ -114,7 +114,7 @@ const Dropdown = ({
                         </li>
                         <li onClick={handle}>
                             <NavLink to="/naildesign">
-                                NAIL DESIGN
+                            NAGELDESIGN
                             </NavLink>
                         </li>
                         <li onClick={handle}>

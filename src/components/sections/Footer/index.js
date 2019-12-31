@@ -17,7 +17,9 @@ const Footer = () => {
                     <div className='flexible vertical footRight aCenter'>
                         <Image src={logo} className='footerImage'/>
                         <div className='flexible footIconParent jCenter'>
-                            <FaEnvelope className='envelopeIcon'/>
+                            <a href="mailto:info@lanush.de">
+                                <FaEnvelope className='envelopeIcon'/>
+                            </a>
                             <a href="https://www.facebook.com/lanushmuc/">
                                 <FaFacebookF className='faceIcon'/>
                             </a>
